@@ -9,7 +9,7 @@ class ErrorController extends AbstractController
     public function index(array $requestData): void
     {
         $this->render('error.php', [
-            'mensagem' => $requestData['mensagem'] ?? 'Erro interno do servidor'
+            'mensagem' => $requestData['mensagem'] ?? 'Erro'
         ]);
     }
 }
